@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: rgb(206, 247, 206);
+    border-radius: 10px;
+    width: 450px !important;
+    height: 450px;
+    padding: 50px !important;
+    /* text-align: center; */
+    margin-top: 100px;
+    
+    
+}
+.main button{
+    border: none;
+    background-color: rgb(206, 247, 206) ;
+}
+.button6{
+    border: solid !important;
+}
