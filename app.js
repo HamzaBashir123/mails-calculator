@@ -8,35 +8,52 @@ var hotmilInbox =document.querySelector('.hotmilInbox')
 var protonInbox =document.querySelector('.protonInbox')
 var laposteInbox =document.querySelector('.laposteInbox')
 var setInbox =document.querySelector('.setInbox')
+var button7 =document.querySelector('.button7')
+
+button7.addEventListener('click', () =>{
+    button1.innerHTML = ""
+    button2.innerHTML = ""
+    button3.innerHTML = ""
+    button4.innerHTML = ""
+    button5.innerHTML = ""
+    hotmilInbox.value = ""
+    protonInbox.value = ""
+    setInbox.value    = ""
+    laposteInbox.value = ""
+    
+})
 
 hotmilInbox.addEventListener('input',() => {
-    console.log(hotmilInbox.value)
-    // var hotmiltotal = hotmilInbox.value*12
     button1.innerHTML = hotmilInbox.value*12
-    // button5.innerHTML = hotmiltotal
+    myfun()
+
+    
     
 
 })
 protonInbox.addEventListener('input',() => {
     console.log(protonInbox.value)
-    var protontotal = protonInbox.value*5
     button2.innerHTML = protonInbox.value*5
-    // button5.innerHTML += button5.innerHTML + protontotal
+
+    myfun()
 
 
 })
 laposteInbox.addEventListener('input',() => {
-    console.log(laposteInbox.value)
-    // var lapostetotal = laposteInbox.value*25
     button3.innerHTML = laposteInbox.value*25
+    myfun()
 
 })
 setInbox.addEventListener('input',() => {
-    console.log(setInbox.value)
-    // var settotal = setInbox.value*39
     button4.innerHTML = setInbox.value*39
+    myfun()
 
 })
+
 button6.addEventListener('click', ()=>{
-    button6.innerHTML=Number( button1.innerHTML)+ Number( button2.innerHTML) +Number( button3.innerHTML) +Number( button4.innerHTML)
+    button5.innerHTML=Number( button1.innerHTML)+ Number( button2.innerHTML) +Number( button3.innerHTML) +Number( button4.innerHTML)
 })
+
+function myfun(){
+    button5.innerHTML=Number( button1.innerHTML)+ Number( button2.innerHTML) +Number( button3.innerHTML) +Number( button4.innerHTML)
+}
