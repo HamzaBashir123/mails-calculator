@@ -24,7 +24,7 @@ button7.addEventListener('click', () =>{
 })
 
 hotmilInbox.addEventListener('input',() => {
-    button1.innerHTML = hotmilInbox.value*14
+    button1.innerHTML = hotmilInbox.value*15
     myfun()
 
     
@@ -33,7 +33,7 @@ hotmilInbox.addEventListener('input',() => {
 })
 protonInbox.addEventListener('input',() => {
     console.log(protonInbox.value)
-    button2.innerHTML = protonInbox.value*7
+    button2.innerHTML = protonInbox.value*6
 
     myfun()
 
@@ -45,7 +45,7 @@ laposteInbox.addEventListener('input',() => {
 
 })
 setInbox.addEventListener('input',() => {
-    button4.innerHTML = setInbox.value*49
+    button4.innerHTML = setInbox.value*48
     myfun()
 
 })

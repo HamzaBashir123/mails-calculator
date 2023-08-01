@@ -71,16 +71,16 @@ input{
     width: 50px;
     height: 35px;
     color: gold !important;
-    font-size: large;
-    animation: animation 1s linear 2s infinite alternate ;
+    font-size: 30px;
+    /* animation: animation 1s linear 2s infinite alternate ; */
     
     
     /* border:  2px solid red !important; */
 }
-@keyframes animation{
+/* @keyframes animation{
     from {scale: 1.2;}
     to {scale: 0.8;}
-}
+} */
 .footer{
     justify-content: space-around;
     /* border: solid !important; */
